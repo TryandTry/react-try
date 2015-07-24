@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/showdown/0.3.1/showdown.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.9.0.js"></script>
+</head>
+<body ng-app="app" ng-controller="appCtrl">
+    <h5>Holle Word</h5>
+    <div id="content"></div>
+    <hr/>
+
+    <h5>Compoent Mount 生命週期 執行順序</h5>
+    <div id="componentMountTest"></div>
+    <br/>
+    <div id="ReceivePropsTest"></div>
+    <hr/>
+
+ 	<h5>Mixins 混入</h5>
+    <div id="MixinsDiv"></div>
+    <hr/>
+
+	<h5>PropTyoes 型別</h5>
+	<div  id="PropTyoes"></div>
+    <hr/>
+
+	<h5>Map 資料(動態生成)</h5>
+	<div id="MapTest"></div>
+    <hr/>
+
+    <h5>插入html於頁面</h5>
+    <div id="innerHtml"></div>
+    <hr/>
+
+    <h5>Angular React Test</h5>
+    <button ng-repeat="item in TabData" ng-click="changTab(item.Id)">{{item.Id}}</button>
+    {{active}}
+    <div id="ngDiv"></div>
+    <hr>
+<script src="https://fb.me/react-with-addons-0.13.3.min.js"></script>
+    <script type="text/javascript" src='build/librar.min.js'></script>
+    <script type="text/javascript" src='build/app.min.js'></script>
+</body>
+</html>
